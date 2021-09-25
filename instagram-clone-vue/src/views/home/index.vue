@@ -1,36 +1,50 @@
 <template>
   <div class="home">
-    <h1>Home</h1>
-    <CustomText class = "a1" tag ="p">Merhaba Dünya</CustomText>
-    <CustomText class = "a2" tag="p" size="small">Merhaba Dünya</CustomText>
-    <CustomText class = "a3" tag="p" size="xsmall">Merhaba Dünya</CustomText>
-    <CustomText tag="p" size="xxsmall">Merhaba Dünya</CustomText>
-    <IconHome/>
+    <div class = "timeline">
+      <h>Home</h>
+      <Avatar :size = "80"/>
+    </div>
+    <div class = "sidebar">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, eius
+        vero. Alias aut blanditiis commodi consectetur eligendi, et minima
+        officiis omnis optio pariatur quod quos repudiandae rerum sed tempora
+        voluptatibus?
+      </p>
+    </div>
+
+
   </div>
 </template>
 
 <script>
 
-import CustomText from '@/components/CustomText'
-import IconHome from '../../icons/home.svg'
+import Avatar from "../../components/avatar";
 
 export default {
   name: 'Home',
   components: {
-    CustomText,
-    IconHome
+    Avatar,
   }
 }
 </script>
 
 <style>
-.a1{
-  color: rgb(var(--ba8))
+.home{
+  max-width: 605px;
+  margin-left: auto;
+  margin-right: auto;
+  @media (--t) {
+    max-width: none;
+    display: grid;
+    grid-template-columns: 1fr 295px;
+    grid-gap: 30px;
+  }
 }
-.a2{
-  color: rgb(var(--b3f))
-}
-.a3 {
-  color: rgb(var(--ba8))
+.sider{
+  display: none;
+  @media (--t) {
+    display: block;
+  }
 }
 </style>
