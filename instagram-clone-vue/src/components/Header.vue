@@ -38,7 +38,7 @@ import IconDirectFill from '@/icons/direct-fill.svg'
 import IconExplore from '@/icons/explore.svg'
 import IconExploreFill from '@/icons/explore-fill.svg'
 import Container from "./Container";
-import Avatar from "./avatar";
+import Avatar from "./Avatar";
 
 export default {
   name: "MainHeader",
