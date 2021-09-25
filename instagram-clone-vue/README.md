@@ -26,8 +26,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ## TODOS
 
 - [x]  vue ve react arasındaki fark. vue-cli ile proje kurulumu.
-- [ ]  css alt yapısı ve tipografi. projedeki (svg) ikonların hazırlanması.
-- [ ]  sayfaları oluşturalım. master-page oluşturalım.
+- [x]  css alt yapısı ve tipografi. projedeki (svg) ikonların hazırlanması.
+- [x]  sayfaları oluşturalım. master-page oluşturalım.
 - [ ]  header tasarımı ve anasayfa  için layout.
 - [ ]  anasayfadaki sstories alanı. Flickty slider.
 - [ ]  anasayfadaki post componenti.
